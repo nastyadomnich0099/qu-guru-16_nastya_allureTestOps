@@ -1,0 +1,10 @@
+,Request URI:	https://reqres.in/api/register
+Body:
+{
+    "email": "sydney@fife",
+    "password": "pistol"
+}
+HTTP/1.1 400 Bad Request
+{
+=    "error": "Note: Only defined users succeed registration"
+}
