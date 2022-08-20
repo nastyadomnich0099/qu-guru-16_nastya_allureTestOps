@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
-//import static helpers.CustomApiListener.withCustomTemplates;
+import static helpers.CustomApiListener.withCustomTemplates;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
@@ -61,7 +61,7 @@ public class DemoWebShopTests extends TestBase {
     void userAuthTest() {
         String cookieName = "NOPCOMMERCE.AUTH";
         String authCookieValue = given()
-              //  .filter(withCustomTemplates())
+                .filter(withCustomTemplates())
                 .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                 .formParam("Email", testData.email)
                 .formParam("Password", testData.password)

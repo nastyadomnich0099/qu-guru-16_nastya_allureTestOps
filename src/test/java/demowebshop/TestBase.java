@@ -8,7 +8,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.RegistrationPage;
 
-//import static helpers.AllureAttachments.*;
+import static helpers.AllureAttachments.*;
 
 public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
@@ -28,12 +28,12 @@ public class TestBase {
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     }
 
-//    @AfterEach
-//    void addAttach() {
-//        screenshotAs("Last screenshot");
-//        pageSource();
-//        browserConsoleLogs();
-//        addVideo();
-//    }
+    @AfterEach
+    void addAttach() {
+        screenshotAs("Last screenshot");
+        pageSource();
+        browserConsoleLogs();
+        addVideo();
+    }
 }
 
