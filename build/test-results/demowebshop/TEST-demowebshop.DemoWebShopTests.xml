@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="demowebshop.DemoWebShopTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-08-20T13:59:04" hostname="Anastasias-MacBook-Pro.local" time="2.175">
+  <properties/>
+  <testcase name="Successfully authorized user API+UI test" classname="demowebshop.DemoWebShopTests" time="2.175">
+    <failure message="java.lang.AssertionError: 1 expectation failed.&#10;Expected status code &lt;302&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;302&gt; but was &lt;200&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at demowebshop.DemoWebShopTests.userAuthTest(DemoWebShopTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Request method:	POST
+Request URI:	http://demowebshop.tricentis.com/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	Email=test.test@example.com
+				Password=123456
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Length: 5848
+Content-Type: text/html; charset=utf-8
+Date: Sat, 20 Aug 2022 13:59:05 GMT
+Server: Microsoft-IIS/10.0
+Cache-Control: private
+Content-Encoding: gzip
+Set-Cookie: Nop.customer=cf1a4df3-6327-48b2-a0f3-7f775a1f4ef1; expires=Sun, 20-Aug-2023 13:59:05 GMT; path=/; HttpOnly
+Set-Cookie: ARRAffinity=92eb765899e80d8de4d490df907547e5cb10de899e8b754a4d5fa1a7122fad69;Path=/;HttpOnly;Domain=demowebshop.tricentis.com
+Vary: Accept-Encoding
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+<html>
+  <head>
+    <title>Demo Web Shop. Login</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="generator" content="nopCommerce"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="/Themes/DefaultClean/Content/styles.css" rel="stylesheet" type="text/css"/>
+    <link href="/Themes/DefaultClean/Content/responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"/>
+    <script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"/>
+    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"/>
+    <script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"/>
+    <script src="/Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"/>
+    <script src="/Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"/>
+    <script src="/Scripts/public.common.js" type="text/javascript"/>
+    <script src="/Scripts/public.ajaxcart.js" type="text/javascript"/>
+    <link rel="shortcut icon" href="http://demowebshop.tricentis.com/favicon.ico"/>
+  </head>
+  <body>
+    <div id="dialog-notifications-success" title="Notification" style="display:none;"/>
+    <div id="dialog-notifications-error" title="Error" style="display:none;"/>
+    <div class="bar-notification" id="bar-notification">
+      <span class="close" title="Close"> </span>
+    </div>
+    <div class="master-wrapper-page">
+      <div class="master-wrapper-content">
+        <script type="text/javascript">
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        <div class="header">
+          <div class="header-logo">
+            <a shape="rect" href="/">
+              <img title="" alt="Tricentis Demo Web Shop" src="/Themes/DefaultClean/Content/images/logo.png"/>
+            </a>
+          </div>
+          <div class="header-links-wrapper">
+            <div class="header-links">
+              <ul>
+                <li>
+                  <a shape="rect" class="ico-register" href="/register">Register</a>
+                </li>
+                <li>
+                  <a shape="rect" class="ico-login" href="/login">Log in</a>
+                </li>
+                <li id="topcartlink">
+                  <a shape="rect" class="ico-cart" href="/cart">
+                    <span class="cart-label">Shopping cart</span>
+                    <span class="cart-qty">(0)</span>
+                  </a>
+                </li>
+                <li>
+                  <a shape="rect" class="ico-wishlist" href="/wishlist">
+                    <span class="cart-label">Wishlist</span>
+                    <span class="wishlist-qty">(0)</span>
+                  </a>
+                </li>
+              </ul>
+              <script type="text/javascript">
+            $(document).ready(function () {
+                $('.header').on('mouseenter', '#topcartlink', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#topcartlink', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+                $('.header').on('mouseenter', '#flyout-cart', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#flyout-cart', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+            });
+        </script>
+            </div>
+            <div class="flyout-cart" id="flyout-cart">
+              <div class="mini-shopping-cart">
+                <div class="count">
+You have no items in your shopping cart.        </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-box">
+            <form enctype="application/x-www-form-urlencoded" method="get" action="/search" onsubmit="return check_small_search_form()">
+              <input type="text" class="search-box-text" id="small-searchterms" autocomplete="off" value="Search store" name="q"/>
+              <input type="submit" class="button-1 search-box-button" value="Search"/>
+              <script type="text/javascript">
+        $(document).ready(function() {
+            $("#small-searchterms").focus(function() {
+                if (this.value == 'Search store') {
+                    this.value = '';
+                }
+            });
+
+            $("#small-searchterms").blur(function() {
+                if (this.value == '') {
+                    this.value = 'Search store';
+                }
+            });
+        });
+
+        function check_small_search_form() {
+            var search_terms = $("#small-searchterms");
+            if (search_terms.val() == "" || search_terms.val() == "Search store") {
+                alert('Please enter some search keyword');
+                search_terms.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+              <script type="text/javascript">
+                $(function() {
+                    $('#small-searchterms').autocomplete({
+                            delay: 500,
+                            minLength: 3,
+                            source: '/catalog/searchtermautocomplete',
+                            select: function(event, ui) {
+                                $("#small-searchterms").val(ui.item.label);
+                                setLocation(ui.item.producturl);
+                                return false;
+                            }
+                        })
+                        .data("ui-autocomplete")._renderItem = function(ul, item) {
+                            var t = item.label;
+                            //html encode
+                            t = htmlEncode(t);
+                            return $("&lt;li&gt;&lt;/li&gt;")
+                                .data("item.autocomplete", item)
+                                .append("&lt;a&gt;" + t + "&lt;/a&gt;")
+                            .appendTo(ul);
+                    };
+                });
+            </script>
+            </form>
+          </div>
+          <div class="header-selectors-wrapper">
+            <div class="tax-display-type-selector"/>
+            <div class="currency-selector"/>
+            <div class="language-selector"/>
+          </div>
+        </div>
+        <div class="header-menu">
+          <ul class="top-menu">
+            <li>
+              <a shape="rect" href="/books">Books
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/computers">Computers
+        </a>
+              <div class="top-menu-triangle"/>
+              <ul class="sublist firstLevel">
+                <li>
+                  <a shape="rect" href="/desktops">Desktops
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/notebooks">Notebooks
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/accessories">Accessories
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a shape="rect" href="/electronics">Electronics
+        </a>
+              <div class="top-menu-triangle"/>
+              <ul class="sublist firstLevel">
+                <li>
+                  <a shape="rect" href="/camera-photo">Camera, photo
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/cell-phones">Cell phones
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/jewelry">Jewelry
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+          </ul>
+          <script type="text/javascript">
+    $('li', '.top-menu').on('mouseenter', function () {
+        $('a', $(this)).first().addClass('hover');
+        if (!$(this).parent().hasClass('top-menu')) {
+            var width = $(this).innerWidth();
+            $('.sublist', $(this)).first().css('left', width + 15);
+        }
+        $('.sublist', $(this)).first().addClass('active');
+        $('.top-menu-triangle', $(this)).addClass('active');
+    });
+
+    $('li', '.top-menu').on('mouseleave', function () {
+        $('a', $(this)).first().removeClass('hover');
+        $('.sublist', $(this)).first().removeClass('active');
+        $('.top-menu-triangle', $(this)).removeClass('active');
+    });
+
+</script>
+          <div id="mob-menu-button">
+            <a shape="rect" href="">
+              <span class="icon">
+                <span class="line"/>
+                <span class="line"/>
+                <span class="line"/>
+              </span>
+              <span>Categories</span>
+            </a>
+          </div>
+          <ul class="mob-top-menu">
+            <li>
+              <a shape="rect" href="/books">Books
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/computers">Computers
+        </a>
+              <div class="top-menu-triangle"/>
+              <span class="expand"> </span>
+              <ul class="sublist firstLevel">
+                <li>
+                  <a shape="rect" href="/desktops">Desktops
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/notebooks">Notebooks
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/accessories">Accessories
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a shape="rect" href="/electronics">Electronics
+        </a>
+              <div class="top-menu-triangle"/>
+              <span class="expand"> </span>
+              <ul class="sublist firstLevel">
+                <li>
+                  <a shape="rect" href="/camera-photo">Camera, photo
+        </a>
+                </li>
+                <li>
+                  <a shape="rect" href="/cell-phones">Cell phones
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/jewelry">Jewelry
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+              <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+              <div class="top-menu-triangle"/>
+            </li>
+          </ul>
+          <script type="text/javascript">
+        $('a', $('#mob-menu-button')).toggle(function() {
+                $('.mob-top-menu').addClass('show');
+            },
+            function() {
+                $('.mob-top-menu').removeClass('show');
+            }
+        );
+
+        $(function($) {
+            $('.mob-top-menu .expand').click(function() {
+                var parent = $(this).parent();
+                if (parent.hasClass('active')) {
+                    $(".sublist:first", parent).hide(300);
+                    parent.removeClass('active');
+                } else {
+                    $(".sublist:first", parent).show(300);
+                    parent.addClass('active');
+                }
+            });
+        });
+    </script>
+        </div>
+        <div class="ajax-loading-block-window" style="display: none">
+          <div class="loading-image"/>
+        </div>
+        <div class="master-wrapper-main">
+          <div class="side-2">
+            <div class="block block-category-navigation">
+              <div class="title">
+                <strong>Categories</strong>
+              </div>
+              <div class="listbox">
+                <ul class="list">
+                  <li class="inactive">
+                    <a shape="rect" href="/books">Books
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/computers">Computers
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/electronics">Electronics
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/jewelry">Jewelry
+        </a>
+                  </li>
+                  <li class="inactive">
+                    <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="block block-manufacturer-navigation">
+              <div class="title">
+                <strong>Manufacturers</strong>
+              </div>
+              <div class="listbox">
+                <ul class="list">
+                  <li class="inactive">
+                    <a shape="rect" href="/tricentis">Tricentis</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="block block-newsletter">
+              <div class="title">
+                <strong>Newsletter</strong>
+              </div>
+              <div class="listbox">
+                <div class="newsletter-subscribe-block" id="newsletter-subscribe-block">
+                  <span>Sign up for our newsletter:</span>
+                  <div class="newsletter-email">
+                    <input type="text" id="newsletter-email" name="NewsletterEmail" value=""/>
+                    <span class="field-validation-valid" data-valmsg-for="NewsletterEmail" data-valmsg-replace="true"/>
+                  </div>
+                  <div class="buttons">
+                    <input type="button" class="button-1 newsletter-subscribe-button" id="newsletter-subscribe-button" value="Subscribe"/>
+                    <span class="please-wait" id="subscribe-loading-progress" style="display: none;">Wait...</span>
+                  </div>
+                </div>
+                <div class="newsletter-result-block" id="newsletter-result-block"/>
+              </div>
+              <script type="text/javascript">
+        $(document).ready(function () {
+            $('#newsletter-subscribe-button').click(function () {
+                
+                var email = $("#newsletter-email").val();
+                var subscribeProgress = $("#subscribe-loading-progress");
+                subscribeProgress.show();
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: "/subscribenewsletter",
+                    data: { "email": email },
+                    success: function (data) {
+                        subscribeProgress.hide();
+                        $("#newsletter-result-block").html(data.Result);
+                         if (data.Success) {
+                            $('#newsletter-subscribe-block').hide();
+                            $('#newsletter-result-block').show();
+                         }
+                         else {
+                            $('#newsletter-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
+                         }
+                    },
+                    error:function (xhr, ajaxOptions, thrownError){
+                        alert('Failed to subscribe.');
+                        subscribeProgress.hide();
+                    }  
+                });                
+                return false;
+            });
+        });
+    </script>
+            </div>
+          </div>
+          <div class="center-2">
+            <div class="page login-page">
+              <div class="page-title">
+                <h1>Welcome, Please Sign In!</h1>
+              </div>
+              <div class="page-body">
+                <div class="customer-blocks">
+                  <div class="new-wrapper register-block">
+                    <div class="title">
+                      <strong>New Customer</strong>
+                    </div>
+                    <div class="text">
+                        By creating an account on our website you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.
+                    </div>
+                    <div class="buttons">
+                      <input type="button" class="button-1 register-button" onclick="location.href='/register'" value="Register"/>
+                    </div>
+                  </div>
+                  <div class="returning-wrapper">
+                    <div class="title">
+                      <strong>Returning Customer</strong>
+                    </div>
+                    <div class="form-fields">
+                      <form enctype="application/x-www-form-urlencoded" method="post" action="/login">
+                        <div class="message-error">
+                          <div class="validation-summary-errors">
+                            <span>Login was unsuccessful. Please correct the errors and try again.</span>
+                            <ul>
+                              <li>The credentials provided are incorrect</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="inputs">
+                          <label for="Email">Email:</label>
+                          <input type="text" class="email" id="Email" autofocus="autofocus" name="Email" value="test.test@example.com"/>
+                          <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"/>
+                        </div>
+                        <div class="inputs">
+                          <label for="Password">Password:</label>
+                          <input type="password" class="password" id="Password" name="Password"/>
+                          <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"/>
+                        </div>
+                        <div class="inputs reversed">
+                          <input type="checkbox" id="RememberMe" name="RememberMe" value="true"/>
+                          <input type="hidden" name="RememberMe" value="false"/>
+                          <label for="RememberMe">Remember me?</label>
+                          <span class="forgot-password">
+                            <a shape="rect" href="/passwordrecovery">Forgot password?</a>
+                          </span>
+                        </div>
+                        <div class="buttons">
+                          <input type="submit" class="button-1 login-button" value="Log in"/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+                <div class="external-authentication"/>
+                <div class="topic-html-content">
+                  <div class="topic-html-content-title">
+                    <h2 class="topic-html-content-header">
+                    About login / registration</h2>
+                  </div>
+                  <div class="topic-html-content-body">
+                    <p>Put your login / registration information here. You can edit this in the admin site.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-menu-wrapper">
+          <div class="column information">
+            <h3>Information</h3>
+            <ul>
+              <li>
+                <a shape="rect" href="/sitemap">Sitemap</a>
+              </li>
+              <li>
+                <a shape="rect" href="/shipping-returns">Shipping &amp; Returns</a>
+              </li>
+              <li>
+                <a shape="rect" href="/privacy-policy">Privacy Notice</a>
+              </li>
+              <li>
+                <a shape="rect" href="/conditions-of-use">Conditions of Use</a>
+              </li>
+              <li>
+                <a shape="rect" href="/about-us">About us</a>
+              </li>
+              <li>
+                <a shape="rect" href="/contactus">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column customer-service">
+            <h3>Customer service</h3>
+            <ul>
+              <li>
+                <a shape="rect" href="/search">Search</a>
+              </li>
+              <li>
+                <a shape="rect" href="/news">News</a>
+              </li>
+              <li>
+                <a shape="rect" href="/blog">Blog</a>
+              </li>
+              <li>
+                <a shape="rect" href="/recentlyviewedproducts">Recently viewed products</a>
+              </li>
+              <li>
+                <a shape="rect" href="/compareproducts">Compare products list</a>
+              </li>
+              <li>
+                <a shape="rect" href="/newproducts">New products</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column my-account">
+            <h3>My account</h3>
+            <ul>
+              <li>
+                <a shape="rect" class="account" href="/customer/info">My account</a>
+              </li>
+              <li>
+                <a shape="rect" href="/customer/orders">Orders</a>
+              </li>
+              <li>
+                <a shape="rect" class="" href="/customer/addresses">Addresses</a>
+              </li>
+              <li>
+                <a shape="rect" class="ico-cart" href="/cart">Shopping cart</a>
+              </li>
+              <li>
+                <a shape="rect" class="ico-wishlist" href="/wishlist">Wishlist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column follow-us">
+            <h3>Follow us</h3>
+            <ul>
+              <li class="facebook">
+                <a shape="rect" href="http://www.facebook.com/nopCommerce" target="_blank">Facebook</a>
+              </li>
+              <li class="twitter">
+                <a shape="rect" href="https://twitter.com/nopCommerce" target="_blank">Twitter</a>
+              </li>
+              <li class="rss">
+                <a shape="rect" href="/news/rss/1">RSS</a>
+              </li>
+              <li class="youtube">
+                <a shape="rect" href="http://www.youtube.com/user/nopCommerce" target="_blank">YouTube</a>
+              </li>
+              <li class="google-plus">
+                <a shape="rect" href="https://plus.google.com/+nopcommerce" target="_blank">Google+</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-poweredby">
+
+        Powered by           <a shape="rect" href="http://www.nopcommerce.com/">nopCommerce</a>
+        </div>
+        <div class="footer-disclaimer">
+        Copyright © 2022 Tricentis Demo Web Shop. All rights reserved.
+    </div>
+        <div class="footer-store-theme"/>
+      </div>
+    </div>
+    <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-6574346-11']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+  </body>
+</html>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

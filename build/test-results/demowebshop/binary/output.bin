@@ -1,0 +1,642 @@
+Request method:	POST
+4Request URI:	http://demowebshop.tricentis.com/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+)Form params:	Email=test.test@example.com
+				Password=123456
+Path params:	<none>
+Headers:		Accept=*/*
+B				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Length: 5848
+'Content-Type: text/html; charset=utf-8
+$Date: Sat, 20 Aug 2022 13:59:05 GMT
+Server: Microsoft-IIS/10.0
+Cache-Control: private
+Content-Encoding: gzip
+wSet-Cookie: Nop.customer=cf1a4df3-6327-48b2-a0f3-7f775a1f4ef1; expires=Sun, 20-Aug-2023 13:59:05 GMT; path=/; HttpOnly
+ŠSet-Cookie: ARRAffinity=92eb765899e80d8de4d490df907547e5cb10de899e8b754a4d5fa1a7122fad69;Path=/;HttpOnly;Domain=demowebshop.tricentis.com
+Vary: Accept-Encoding
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+<html>
+	  <head>
+(    <title>Demo Web Shop. Login</title>
+H    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+*    <meta name="description" content=""/>
+'    <meta name="keywords" content=""/>
+3    <meta name="generator" content="nopCommerce"/>
+J    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+\    <link href="/Themes/DefaultClean/Content/styles.css" rel="stylesheet" type="text/css"/>
+`    <link href="/Themes/DefaultClean/Content/responsive.css" rel="stylesheet" type="text/css"/>
+y    <link href="/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" type="text/css"/>
+I    <script src="/Scripts/jquery-1.10.2.min.js" type="text/javascript"/>
+K    <script src="/Scripts/jquery.validate.min.js" type="text/javascript"/>
+W    <script src="/Scripts/jquery.validate.unobtrusive.min.js" type="text/javascript"/>
+S    <script src="/Scripts/jquery-ui-1.10.3.custom.min.js" type="text/javascript"/>
+P    <script src="/Scripts/jquery-migrate-1.2.1.min.js" type="text/javascript"/>
+E    <script src="/Scripts/public.common.js" type="text/javascript"/>
+G    <script src="/Scripts/public.ajaxcart.js" type="text/javascript"/>
+T    <link rel="shortcut icon" href="http://demowebshop.tricentis.com/favicon.ico"/>
+
+  </head>
+	  <body>
+X    <div id="dialog-notifications-success" title="Notification" style="display:none;"/>
+O    <div id="dialog-notifications-error" title="Error" style="display:none;"/>
+9    <div class="bar-notification" id="bar-notification">
+2      <span class="close" title="Close">Â </span>
+    </div>
+&    <div class="master-wrapper-page">
++      <div class="master-wrapper-content">
+(        <script type="text/javascript">
+l            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        </script>
+        <div class="header">
+$          <div class="header-logo">
+&            <a shape="rect" href="/">
+o              <img title="" alt="Tricentis Demo Web Shop" src="/Themes/DefaultClean/Content/images/logo.png"/>
+            </a>
+          </div>
+-          <div class="header-links-wrapper">
+'            <div class="header-links">
+              <ul>
+                <li>
+U                  <a shape="rect" class="ico-register" href="/register">Register</a>
+                </li>
+                <li>
+M                  <a shape="rect" class="ico-login" href="/login">Log in</a>
+                </li>
+&                <li id="topcartlink">
+A                  <a shape="rect" class="ico-cart" href="/cart">
+B                    <span class="cart-label">Shopping cart</span>
+6                    <span class="cart-qty">(0)</span>
+                  </a>
+                </li>
+                <li>
+I                  <a shape="rect" class="ico-wishlist" href="/wishlist">
+=                    <span class="cart-label">Wishlist</span>
+:                    <span class="wishlist-qty">(0)</span>
+                  </a>
+                </li>
+              </ul>
+.              <script type="text/javascript">
+,            $(document).ready(function () {
+L                $('.header').on('mouseenter', '#topcartlink', function () {
+:                    $('#flyout-cart').addClass('active');
+                });
+L                $('.header').on('mouseleave', '#topcartlink', function () {
+=                    $('#flyout-cart').removeClass('active');
+                });
+L                $('.header').on('mouseenter', '#flyout-cart', function () {
+:                    $('#flyout-cart').addClass('active');
+                });
+L                $('.header').on('mouseleave', '#flyout-cart', function () {
+=                    $('#flyout-cart').removeClass('active');
+                });
+            });
+        </script>
+            </div>
+7            <div class="flyout-cart" id="flyout-cart">
+/              <div class="mini-shopping-cart">
+$                <div class="count">
+7You have no items in your shopping cart.        </div>
+              </div>
+            </div>
+          </div>
+#          <div class="search-box">
+‰            <form enctype="application/x-www-form-urlencoded" method="get" action="/search" onsubmit="return check_small_search_form()">
+ƒ              <input type="text" class="search-box-text" id="small-searchterms" autocomplete="off" value="Search store" name="q"/>
+W              <input type="submit" class="button-1 search-box-button" value="Search"/>
+.              <script type="text/javascript">
+'        $(document).ready(function() {
+7            $("#small-searchterms").focus(function() {
+4                if (this.value == 'Search store') {
+%                    this.value = '';
+                }
+            });
+
+6            $("#small-searchterms").blur(function() {
+(                if (this.value == '') {
+1                    this.value = 'Search store';
+                }
+            });
+        });
+
+-        function check_small_search_form() {
+8            var search_terms = $("#small-searchterms");
+T            if (search_terms.val() == "" || search_terms.val() == "Search store") {
+;                alert('Please enter some search keyword');
+&                search_terms.focus();
+                return false;
+            }
+            return true;
+
+        }
+    </script>
+.              <script type="text/javascript">
+                $(function() {
+;                    $('#small-searchterms').autocomplete({
+(                            delay: 500,
+*                            minLength: 3,
+G                            source: '/catalog/searchtermautocomplete',
+:                            select: function(event, ui) {
+L                                $("#small-searchterms").val(ui.item.label);
+A                                setLocation(ui.item.producturl);
+.                                return false;
+                            }
+                        })
+T                        .data("ui-autocomplete")._renderItem = function(ul, item) {
+0                            var t = item.label;
+*                            //html encode
+/                            t = htmlEncode(t);
+>                            return $("&lt;li&gt;&lt;/li&gt;")
+A                                .data("item.autocomplete", item)
+H                                .append("&lt;a&gt;" + t + "&lt;/a&gt;")
++                            .appendTo(ul);
+                    };
+                });
+            </script>
+            </form>
+          </div>
+1          <div class="header-selectors-wrapper">
+5            <div class="tax-display-type-selector"/>
+-            <div class="currency-selector"/>
+-            <div class="language-selector"/>
+          </div>
+        </div>
+"        <div class="header-menu">
+           <ul class="top-menu">
+            <li>
+2              <a shape="rect" href="/books">Books
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+:              <a shape="rect" href="/computers">Computers
+        </a>
+/              <div class="top-menu-triangle"/>
+.              <ul class="sublist firstLevel">
+                <li>
+<                  <a shape="rect" href="/desktops">Desktops
+        </a>
+                </li>
+                <li>
+>                  <a shape="rect" href="/notebooks">Notebooks
+        </a>
+                </li>
+                <li>
+B                  <a shape="rect" href="/accessories">Accessories
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+>              <a shape="rect" href="/electronics">Electronics
+        </a>
+/              <div class="top-menu-triangle"/>
+.              <ul class="sublist firstLevel">
+                <li>
+E                  <a shape="rect" href="/camera-photo">Camera, photo
+        </a>
+                </li>
+                <li>
+B                  <a shape="rect" href="/cell-phones">Cell phones
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+H              <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+J              <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+6              <a shape="rect" href="/jewelry">Jewelry
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+<              <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+          </ul>
+*          <script type="text/javascript">
+8    $('li', '.top-menu').on('mouseenter', function () {
+3        $('a', $(this)).first().addClass('hover');
+6        if (!$(this).parent().hasClass('top-menu')) {
+.            var width = $(this).innerWidth();
+D            $('.sublist', $(this)).first().css('left', width + 15);
+
+        }
+;        $('.sublist', $(this)).first().addClass('active');
+=        $('.top-menu-triangle', $(this)).addClass('active');
+    });
+
+8    $('li', '.top-menu').on('mouseleave', function () {
+6        $('a', $(this)).first().removeClass('hover');
+>        $('.sublist', $(this)).first().removeClass('active');
+@        $('.top-menu-triangle', $(this)).removeClass('active');
+    });
+
+
+</script>
+%          <div id="mob-menu-button">
+%            <a shape="rect" href="">
+"              <span class="icon">
+%                <span class="line"/>
+%                <span class="line"/>
+%                <span class="line"/>
+              </span>
+&              <span>Categories</span>
+            </a>
+          </div>
+$          <ul class="mob-top-menu">
+            <li>
+2              <a shape="rect" href="/books">Books
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+:              <a shape="rect" href="/computers">Computers
+        </a>
+/              <div class="top-menu-triangle"/>
+-              <span class="expand">Â </span>
+.              <ul class="sublist firstLevel">
+                <li>
+<                  <a shape="rect" href="/desktops">Desktops
+        </a>
+                </li>
+                <li>
+>                  <a shape="rect" href="/notebooks">Notebooks
+        </a>
+                </li>
+                <li>
+B                  <a shape="rect" href="/accessories">Accessories
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+>              <a shape="rect" href="/electronics">Electronics
+        </a>
+/              <div class="top-menu-triangle"/>
+-              <span class="expand">Â </span>
+.              <ul class="sublist firstLevel">
+                <li>
+E                  <a shape="rect" href="/camera-photo">Camera, photo
+        </a>
+                </li>
+                <li>
+B                  <a shape="rect" href="/cell-phones">Cell phones
+        </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+H              <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+J              <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+6              <a shape="rect" href="/jewelry">Jewelry
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+            <li>
+<              <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+/              <div class="top-menu-triangle"/>
+            </li>
+          </ul>
+*          <script type="text/javascript">
+:        $('a', $('#mob-menu-button')).toggle(function() {
+5                $('.mob-top-menu').addClass('show');
+            },
+            function() {
+8                $('.mob-top-menu').removeClass('show');
+            }
+        );
+
+        $(function($) {
+:            $('.mob-top-menu .expand').click(function() {
+/                var parent = $(this).parent();
+1                if (parent.hasClass('active')) {
+;                    $(".sublist:first", parent).hide(300);
+2                    parent.removeClass('active');
+                } else {
+;                    $(".sublist:first", parent).show(300);
+/                    parent.addClass('active');
+                }
+            });
+        });
+    </script>
+        </div>
+F        <div class="ajax-loading-block-window" style="display: none">
+'          <div class="loading-image"/>
+        </div>
+*        <div class="master-wrapper-main">
+          <div class="side-2">
+:            <div class="block block-category-navigation">
+"              <div class="title">
+,                <strong>Categories</strong>
+              </div>
+$              <div class="listbox">
+"                <ul class="list">
+(                  <li class="inactive">
+8                    <a shape="rect" href="/books">Books
+        </a>
+                  </li>
+(                  <li class="inactive">
+@                    <a shape="rect" href="/computers">Computers
+        </a>
+                  </li>
+(                  <li class="inactive">
+D                    <a shape="rect" href="/electronics">Electronics
+        </a>
+                  </li>
+(                  <li class="inactive">
+N                    <a shape="rect" href="/apparel-shoes">Apparel &amp; Shoes
+        </a>
+                  </li>
+(                  <li class="inactive">
+P                    <a shape="rect" href="/digital-downloads">Digital downloads
+        </a>
+                  </li>
+(                  <li class="inactive">
+<                    <a shape="rect" href="/jewelry">Jewelry
+        </a>
+                  </li>
+(                  <li class="inactive">
+B                    <a shape="rect" href="/gift-cards">Gift Cards
+        </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+>            <div class="block block-manufacturer-navigation">
+"              <div class="title">
+/                <strong>Manufacturers</strong>
+              </div>
+$              <div class="listbox">
+"                <ul class="list">
+(                  <li class="inactive">
+D                    <a shape="rect" href="/tricentis">Tricentis</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+1            <div class="block block-newsletter">
+"              <div class="title">
+,                <strong>Newsletter</strong>
+              </div>
+$              <div class="listbox">
+Y                <div class="newsletter-subscribe-block" id="newsletter-subscribe-block">
+;                  <span>Sign up for our newsletter:</span>
+1                  <div class="newsletter-email">
+_                    <input type="text" id="newsletter-email" name="NewsletterEmail" value=""/>
+x                    <span class="field-validation-valid" data-valmsg-for="NewsletterEmail" data-valmsg-replace="true"/>
+                  </div>
+(                  <div class="buttons">
+‹                    <input type="button" class="button-1 newsletter-subscribe-button" id="newsletter-subscribe-button" value="Subscribe"/>
+t                    <span class="please-wait" id="subscribe-loading-progress" style="display: none;">Wait...</span>
+                  </div>
+                </div>
+T                <div class="newsletter-result-block" id="newsletter-result-block"/>
+              </div>
+.              <script type="text/javascript">
+(        $(document).ready(function () {
+B            $('#newsletter-subscribe-button').click(function () {
+                
+:                var email = $("#newsletter-email").val();
+J                var subscribeProgress = $("#subscribe-loading-progress");
+*                subscribeProgress.show();
+                $.ajax({
+"                    cache: false,
+"                    type: "POST",
+1                    url: "/subscribenewsletter",
+.                    data: { "email": email },
+/                    success: function (data) {
+2                        subscribeProgress.hide();
+I                        $("#newsletter-result-block").html(data.Result);
+-                         if (data.Success) {
+E                            $('#newsletter-subscribe-block').hide();
+B                            $('#newsletter-result-block').show();
+                         }
+                          else {
+f                            $('#newsletter-result-block').fadeIn("slow").delay(2000).fadeOut("slow");
+                         }
+                    },
+D                    error:function (xhr, ajaxOptions, thrownError){
+7                        alert('Failed to subscribe.');
+2                        subscribeProgress.hide();
+                    }  
+$                });                
+                return false;
+            });
+        });
+    </script>
+            </div>
+          </div>
+!          <div class="center-2">
+*            <div class="page login-page">
+'              <div class="page-title">
+2                <h1>Welcome, Please Sign In!</h1>
+              </div>
+&              <div class="page-body">
+.                <div class="customer-blocks">
+;                  <div class="new-wrapper register-block">
+(                    <div class="title">
+4                      <strong>New Customer</strong>
+                    </div>
+'                    <div class="text">
+¹                        By creating an account on our website you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.
+                    </div>
+*                    <div class="buttons">
+ƒ                      <input type="button" class="button-1 register-button" onclick="location.href='/register'" value="Register"/>
+                    </div>
+                  </div>
+2                  <div class="returning-wrapper">
+(                    <div class="title">
+:                      <strong>Returning Customer</strong>
+                    </div>
+.                    <div class="form-fields">
+g                      <form enctype="application/x-www-form-urlencoded" method="post" action="/login">
+4                        <div class="message-error">
+B                          <div class="validation-summary-errors">
+j                            <span>Login was unsuccessful. Please correct the errors and try again.</span>
+!                            <ul>
+N                              <li>The credentials provided are incorrect</li>
+"                            </ul>
+!                          </div>
+                        </div>
+-                        <div class="inputs">
+<                          <label for="Email">Email:</label>
+‰                          <input type="text" class="email" id="Email" autofocus="autofocus" name="Email" value="test.test@example.com"/>
+t                          <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"/>
+                        </div>
+-                        <div class="inputs">
+B                          <label for="Password">Password:</label>
+b                          <input type="password" class="password" id="Password" name="Password"/>
+w                          <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"/>
+                        </div>
+6                        <div class="inputs reversed">
+b                          <input type="checkbox" id="RememberMe" name="RememberMe" value="true"/>
+Q                          <input type="hidden" name="RememberMe" value="false"/>
+G                          <label for="RememberMe">Remember me?</label>
+9                          <span class="forgot-password">
+Z                            <a shape="rect" href="/passwordrecovery">Forgot password?</a>
+"                          </span>
+                        </div>
+.                        <div class="buttons">
+^                          <input type="submit" class="button-1 login-button" value="Log in"/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+7                <div class="external-authentication"/>
+1                <div class="topic-html-content">
+9                  <div class="topic-html-content-title">
+;                    <h2 class="topic-html-content-header">
+4                    About login / registration</h2>
+                  </div>
+8                  <div class="topic-html-content-body">
+p                    <p>Put your login / registration information here. You can edit this in the admin site.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+*        <div class="footer-menu-wrapper">
++          <div class="column information">
+!            <h3>Information</h3>
+            <ul>
+              <li>
+<                <a shape="rect" href="/sitemap">Sitemap</a>
+              </li>
+              <li>
+T                <a shape="rect" href="/shipping-returns">Shipping &amp; Returns</a>
+              </li>
+              <li>
+J                <a shape="rect" href="/privacy-policy">Privacy Notice</a>
+              </li>
+              <li>
+P                <a shape="rect" href="/conditions-of-use">Conditions of Use</a>
+              </li>
+              <li>
+>                <a shape="rect" href="/about-us">About us</a>
+              </li>
+              <li>
+A                <a shape="rect" href="/contactus">Contact us</a>
+              </li>
+            </ul>
+          </div>
+0          <div class="column customer-service">
+&            <h3>Customer service</h3>
+            <ul>
+              <li>
+:                <a shape="rect" href="/search">Search</a>
+              </li>
+              <li>
+6                <a shape="rect" href="/news">News</a>
+              </li>
+              <li>
+6                <a shape="rect" href="/blog">Blog</a>
+              </li>
+              <li>
+\                <a shape="rect" href="/recentlyviewedproducts">Recently viewed products</a>
+              </li>
+              <li>
+R                <a shape="rect" href="/compareproducts">Compare products list</a>
+              </li>
+              <li>
+E                <a shape="rect" href="/newproducts">New products</a>
+              </li>
+            </ul>
+          </div>
+*          <div class="column my-account">
+             <h3>My account</h3>
+            <ul>
+              <li>
+U                <a shape="rect" class="account" href="/customer/info">My account</a>
+              </li>
+              <li>
+C                <a shape="rect" href="/customer/orders">Orders</a>
+              </li>
+              <li>
+R                <a shape="rect" class="" href="/customer/addresses">Addresses</a>
+              </li>
+              <li>
+P                <a shape="rect" class="ico-cart" href="/cart">Shopping cart</a>
+              </li>
+              <li>
+S                <a shape="rect" class="ico-wishlist" href="/wishlist">Wishlist</a>
+              </li>
+            </ul>
+          </div>
+)          <div class="column follow-us">
+            <h3>Follow us</h3>
+            <ul>
+$              <li class="facebook">
+h                <a shape="rect" href="http://www.facebook.com/nopCommerce" target="_blank">Facebook</a>
+              </li>
+#              <li class="twitter">
+c                <a shape="rect" href="https://twitter.com/nopCommerce" target="_blank">Twitter</a>
+              </li>
+              <li class="rss">
+;                <a shape="rect" href="/news/rss/1">RSS</a>
+              </li>
+#              <li class="youtube">
+k                <a shape="rect" href="http://www.youtube.com/user/nopCommerce" target="_blank">YouTube</a>
+              </li>
+'              <li class="google-plus">
+h                <a shape="rect" href="https://plus.google.com/+nopcommerce" target="_blank">Google+</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+'        <div class="footer-poweredby">
+
+`        Powered by           <a shape="rect" href="http://www.nopcommerce.com/">nopCommerce</a>
+        </div>
+(        <div class="footer-disclaimer">
+H        Copyright Â© 2022 Tricentis Demo Web Shop. All rights reserved.
+    </div>
+*        <div class="footer-store-theme"/>
+      </div>
+    </div>
+$    <script type="text/javascript">
+var _gaq = _gaq || [];
+-_gaq.push(['_setAccount', 'UA-6574346-11']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+]    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+v    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+Z    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+  </body>
+</html>

@@ -1,10 +1,10 @@
-,Request URI:	https://reqres.in/api/register
+)Request URI:	https://reqres.in/api/login
 Body:
 {
-    "email": "sydney@fife",
-    "password": "pistol"
+#    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
 }
-HTTP/1.1 400 Bad Request
+HTTP/1.1 200 OK
 {
-=    "error": "Note: Only defined users succeed registration"
+!    "token": "QpwL5tke4Pnpja7X4"
 }

@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - DemoWebShopTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>DemoWebShopTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/demowebshop.html">demowebshop</a> &gt; DemoWebShopTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.175s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="userAuthTest()"></a>
+<h3 class="failures">Successfully authorized user API+UI test</h3>
+<span class="code">
+<pre>java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;302&gt; but was &lt;200&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at demowebshop.DemoWebShopTests.userAuthTest(DemoWebShopTests.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
+	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:133)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Successfully authorized user API+UI test</td>
+<td class="failures">userAuthTest()</td>
+<td class="failures">2.175s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	POST
+Request URI:	http://demowebshop.tricentis.com/login
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	Email=test.test@example.com
+				Password=123456
+Path params:	&lt;none&gt;
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Content-Length: 5848
+Content-Type: text/html; charset=utf-8
+Date: Sat, 20 Aug 2022 13:59:05 GMT
+Server: Microsoft-IIS/10.0
+Cache-Control: private
+Content-Encoding: gzip
+Set-Cookie: Nop.customer=cf1a4df3-6327-48b2-a0f3-7f775a1f4ef1; expires=Sun, 20-Aug-2023 13:59:05 GMT; path=/; HttpOnly
+Set-Cookie: ARRAffinity=92eb765899e80d8de4d490df907547e5cb10de899e8b754a4d5fa1a7122fad69;Path=/;HttpOnly;Domain=demowebshop.tricentis.com
+Vary: Accept-Encoding
+X-AspNetMvc-Version: 5.2
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Demo Web Shop. Login&lt;/title&gt;
+    &lt;meta http-equiv=&quot;Content-type&quot; content=&quot;text/html;charset=UTF-8&quot;/&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;/&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;/&gt;
+    &lt;meta name=&quot;generator&quot; content=&quot;nopCommerce&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;
+    &lt;link href=&quot;/Themes/DefaultClean/Content/styles.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;link href=&quot;/Themes/DefaultClean/Content/responsive.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;link href=&quot;/Content/jquery-ui-themes/smoothness/jquery-ui-1.10.3.custom.min.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;script src=&quot;/Scripts/jquery-1.10.2.min.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/jquery.validate.min.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/jquery.validate.unobtrusive.min.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/jquery-ui-1.10.3.custom.min.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/jquery-migrate-1.2.1.min.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/public.common.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;script src=&quot;/Scripts/public.ajaxcart.js&quot; type=&quot;text/javascript&quot;/&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;http://demowebshop.tricentis.com/favicon.ico&quot;/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id=&quot;dialog-notifications-success&quot; title=&quot;Notification&quot; style=&quot;display:none;&quot;/&gt;
+    &lt;div id=&quot;dialog-notifications-error&quot; title=&quot;Error&quot; style=&quot;display:none;&quot;/&gt;
+    &lt;div class=&quot;bar-notification&quot; id=&quot;bar-notification&quot;&gt;
+      &lt;span class=&quot;close&quot; title=&quot;Close&quot;&gt; &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;master-wrapper-page&quot;&gt;
+      &lt;div class=&quot;master-wrapper-content&quot;&gt;
+        &lt;script type=&quot;text/javascript&quot;&gt;
+            AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart');
+        &lt;/script&gt;
+        &lt;div class=&quot;header&quot;&gt;
+          &lt;div class=&quot;header-logo&quot;&gt;
+            &lt;a shape=&quot;rect&quot; href=&quot;/&quot;&gt;
+              &lt;img title=&quot;&quot; alt=&quot;Tricentis Demo Web Shop&quot; src=&quot;/Themes/DefaultClean/Content/images/logo.png&quot;/&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;header-links-wrapper&quot;&gt;
+            &lt;div class=&quot;header-links&quot;&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; class=&quot;ico-register&quot; href=&quot;/register&quot;&gt;Register&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; class=&quot;ico-login&quot; href=&quot;/login&quot;&gt;Log in&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li id=&quot;topcartlink&quot;&gt;
+                  &lt;a shape=&quot;rect&quot; class=&quot;ico-cart&quot; href=&quot;/cart&quot;&gt;
+                    &lt;span class=&quot;cart-label&quot;&gt;Shopping cart&lt;/span&gt;
+                    &lt;span class=&quot;cart-qty&quot;&gt;(0)&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; class=&quot;ico-wishlist&quot; href=&quot;/wishlist&quot;&gt;
+                    &lt;span class=&quot;cart-label&quot;&gt;Wishlist&lt;/span&gt;
+                    &lt;span class=&quot;wishlist-qty&quot;&gt;(0)&lt;/span&gt;
+                  &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+              &lt;script type=&quot;text/javascript&quot;&gt;
+            $(document).ready(function () {
+                $('.header').on('mouseenter', '#topcartlink', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#topcartlink', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+                $('.header').on('mouseenter', '#flyout-cart', function () {
+                    $('#flyout-cart').addClass('active');
+                });
+                $('.header').on('mouseleave', '#flyout-cart', function () {
+                    $('#flyout-cart').removeClass('active');
+                });
+            });
+        &lt;/script&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;flyout-cart&quot; id=&quot;flyout-cart&quot;&gt;
+              &lt;div class=&quot;mini-shopping-cart&quot;&gt;
+                &lt;div class=&quot;count&quot;&gt;
+You have no items in your shopping cart.        &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;search-box&quot;&gt;
+            &lt;form enctype=&quot;application/x-www-form-urlencoded&quot; method=&quot;get&quot; action=&quot;/search&quot; onsubmit=&quot;return check_small_search_form()&quot;&gt;
+              &lt;input type=&quot;text&quot; class=&quot;search-box-text&quot; id=&quot;small-searchterms&quot; autocomplete=&quot;off&quot; value=&quot;Search store&quot; name=&quot;q&quot;/&gt;
+              &lt;input type=&quot;submit&quot; class=&quot;button-1 search-box-button&quot; value=&quot;Search&quot;/&gt;
+              &lt;script type=&quot;text/javascript&quot;&gt;
+        $(document).ready(function() {
+            $(&quot;#small-searchterms&quot;).focus(function() {
+                if (this.value == 'Search store') {
+                    this.value = '';
+                }
+            });
+
+            $(&quot;#small-searchterms&quot;).blur(function() {
+                if (this.value == '') {
+                    this.value = 'Search store';
+                }
+            });
+        });
+
+        function check_small_search_form() {
+            var search_terms = $(&quot;#small-searchterms&quot;);
+            if (search_terms.val() == &quot;&quot; || search_terms.val() == &quot;Search store&quot;) {
+                alert('Please enter some search keyword');
+                search_terms.focus();
+                return false;
+            }
+            return true;
+        }
+    &lt;/script&gt;
+              &lt;script type=&quot;text/javascript&quot;&gt;
+                $(function() {
+                    $('#small-searchterms').autocomplete({
+                            delay: 500,
+                            minLength: 3,
+                            source: '/catalog/searchtermautocomplete',
+                            select: function(event, ui) {
+                                $(&quot;#small-searchterms&quot;).val(ui.item.label);
+                                setLocation(ui.item.producturl);
+                                return false;
+                            }
+                        })
+                        .data(&quot;ui-autocomplete&quot;)._renderItem = function(ul, item) {
+                            var t = item.label;
+                            //html encode
+                            t = htmlEncode(t);
+                            return $(&quot;&amp;lt;li&amp;gt;&amp;lt;/li&amp;gt;&quot;)
+                                .data(&quot;item.autocomplete&quot;, item)
+                                .append(&quot;&amp;lt;a&amp;gt;&quot; + t + &quot;&amp;lt;/a&amp;gt;&quot;)
+                            .appendTo(ul);
+                    };
+                });
+            &lt;/script&gt;
+            &lt;/form&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;header-selectors-wrapper&quot;&gt;
+            &lt;div class=&quot;tax-display-type-selector&quot;/&gt;
+            &lt;div class=&quot;currency-selector&quot;/&gt;
+            &lt;div class=&quot;language-selector&quot;/&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;header-menu&quot;&gt;
+          &lt;ul class=&quot;top-menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/books&quot;&gt;Books
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/computers&quot;&gt;Computers
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+              &lt;ul class=&quot;sublist firstLevel&quot;&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/desktops&quot;&gt;Desktops
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/notebooks&quot;&gt;Notebooks
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/accessories&quot;&gt;Accessories
+        &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/electronics&quot;&gt;Electronics
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+              &lt;ul class=&quot;sublist firstLevel&quot;&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/camera-photo&quot;&gt;Camera, photo
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/cell-phones&quot;&gt;Cell phones
+        &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/apparel-shoes&quot;&gt;Apparel &amp;amp; Shoes
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/digital-downloads&quot;&gt;Digital downloads
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/jewelry&quot;&gt;Jewelry
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/gift-cards&quot;&gt;Gift Cards
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;
+    $('li', '.top-menu').on('mouseenter', function () {
+        $('a', $(this)).first().addClass('hover');
+        if (!$(this).parent().hasClass('top-menu')) {
+            var width = $(this).innerWidth();
+            $('.sublist', $(this)).first().css('left', width + 15);
+        }
+        $('.sublist', $(this)).first().addClass('active');
+        $('.top-menu-triangle', $(this)).addClass('active');
+    });
+
+    $('li', '.top-menu').on('mouseleave', function () {
+        $('a', $(this)).first().removeClass('hover');
+        $('.sublist', $(this)).first().removeClass('active');
+        $('.top-menu-triangle', $(this)).removeClass('active');
+    });
+
+&lt;/script&gt;
+          &lt;div id=&quot;mob-menu-button&quot;&gt;
+            &lt;a shape=&quot;rect&quot; href=&quot;&quot;&gt;
+              &lt;span class=&quot;icon&quot;&gt;
+                &lt;span class=&quot;line&quot;/&gt;
+                &lt;span class=&quot;line&quot;/&gt;
+                &lt;span class=&quot;line&quot;/&gt;
+              &lt;/span&gt;
+              &lt;span&gt;Categories&lt;/span&gt;
+            &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;ul class=&quot;mob-top-menu&quot;&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/books&quot;&gt;Books
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/computers&quot;&gt;Computers
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+              &lt;span class=&quot;expand&quot;&gt; &lt;/span&gt;
+              &lt;ul class=&quot;sublist firstLevel&quot;&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/desktops&quot;&gt;Desktops
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/notebooks&quot;&gt;Notebooks
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/accessories&quot;&gt;Accessories
+        &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/electronics&quot;&gt;Electronics
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+              &lt;span class=&quot;expand&quot;&gt; &lt;/span&gt;
+              &lt;ul class=&quot;sublist firstLevel&quot;&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/camera-photo&quot;&gt;Camera, photo
+        &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a shape=&quot;rect&quot; href=&quot;/cell-phones&quot;&gt;Cell phones
+        &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/apparel-shoes&quot;&gt;Apparel &amp;amp; Shoes
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/digital-downloads&quot;&gt;Digital downloads
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/jewelry&quot;&gt;Jewelry
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a shape=&quot;rect&quot; href=&quot;/gift-cards&quot;&gt;Gift Cards
+        &lt;/a&gt;
+              &lt;div class=&quot;top-menu-triangle&quot;/&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;script type=&quot;text/javascript&quot;&gt;
+        $('a', $('#mob-menu-button')).toggle(function() {
+                $('.mob-top-menu').addClass('show');
+            },
+            function() {
+                $('.mob-top-menu').removeClass('show');
+            }
+        );
+
+        $(function($) {
+            $('.mob-top-menu .expand').click(function() {
+                var parent = $(this).parent();
+                if (parent.hasClass('active')) {
+                    $(&quot;.sublist:first&quot;, parent).hide(300);
+                    parent.removeClass('active');
+                } else {
+                    $(&quot;.sublist:first&quot;, parent).show(300);
+                    parent.addClass('active');
+                }
+            });
+        });
+    &lt;/script&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ajax-loading-block-window&quot; style=&quot;display: none&quot;&gt;
+          &lt;div class=&quot;loading-image&quot;/&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;master-wrapper-main&quot;&gt;
+          &lt;div class=&quot;side-2&quot;&gt;
+            &lt;div class=&quot;block block-category-navigation&quot;&gt;
+              &lt;div class=&quot;title&quot;&gt;
+                &lt;strong&gt;Categories&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;listbox&quot;&gt;
+                &lt;ul class=&quot;list&quot;&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/books&quot;&gt;Books
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/computers&quot;&gt;Computers
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/electronics&quot;&gt;Electronics
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/apparel-shoes&quot;&gt;Apparel &amp;amp; Shoes
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/digital-downloads&quot;&gt;Digital downloads
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/jewelry&quot;&gt;Jewelry
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/gift-cards&quot;&gt;Gift Cards
+        &lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;block block-manufacturer-navigation&quot;&gt;
+              &lt;div class=&quot;title&quot;&gt;
+                &lt;strong&gt;Manufacturers&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;listbox&quot;&gt;
+                &lt;ul class=&quot;list&quot;&gt;
+                  &lt;li class=&quot;inactive&quot;&gt;
+                    &lt;a shape=&quot;rect&quot; href=&quot;/tricentis&quot;&gt;Tricentis&lt;/a&gt;
+                  &lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;block block-newsletter&quot;&gt;
+              &lt;div class=&quot;title&quot;&gt;
+                &lt;strong&gt;Newsletter&lt;/strong&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;listbox&quot;&gt;
+                &lt;div class=&quot;newsletter-subscribe-block&quot; id=&quot;newsletter-subscribe-block&quot;&gt;
+                  &lt;span&gt;Sign up for our newsletter:&lt;/span&gt;
+                  &lt;div class=&quot;newsletter-email&quot;&gt;
+                    &lt;input type=&quot;text&quot; id=&quot;newsletter-email&quot; name=&quot;NewsletterEmail&quot; value=&quot;&quot;/&gt;
+                    &lt;span class=&quot;field-validation-valid&quot; data-valmsg-for=&quot;NewsletterEmail&quot; data-valmsg-replace=&quot;true&quot;/&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;buttons&quot;&gt;
+                    &lt;input type=&quot;button&quot; class=&quot;button-1 newsletter-subscribe-button&quot; id=&quot;newsletter-subscribe-button&quot; value=&quot;Subscribe&quot;/&gt;
+                    &lt;span class=&quot;please-wait&quot; id=&quot;subscribe-loading-progress&quot; style=&quot;display: none;&quot;&gt;Wait...&lt;/span&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;newsletter-result-block&quot; id=&quot;newsletter-result-block&quot;/&gt;
+              &lt;/div&gt;
+              &lt;script type=&quot;text/javascript&quot;&gt;
+        $(document).ready(function () {
+            $('#newsletter-subscribe-button').click(function () {
+                
+                var email = $(&quot;#newsletter-email&quot;).val();
+                var subscribeProgress = $(&quot;#subscribe-loading-progress&quot;);
+                subscribeProgress.show();
+                $.ajax({
+                    cache: false,
+                    type: &quot;POST&quot;,
+                    url: &quot;/subscribenewsletter&quot;,
+                    data: { &quot;email&quot;: email },
+                    success: function (data) {
+                        subscribeProgress.hide();
+                        $(&quot;#newsletter-result-block&quot;).html(data.Result);
+                         if (data.Success) {
+                            $('#newsletter-subscribe-block').hide();
+                            $('#newsletter-result-block').show();
+                         }
+                         else {
+                            $('#newsletter-result-block').fadeIn(&quot;slow&quot;).delay(2000).fadeOut(&quot;slow&quot;);
+                         }
+                    },
+                    error:function (xhr, ajaxOptions, thrownError){
+                        alert('Failed to subscribe.');
+                        subscribeProgress.hide();
+                    }  
+                });                
+                return false;
+            });
+        });
+    &lt;/script&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;center-2&quot;&gt;
+            &lt;div class=&quot;page login-page&quot;&gt;
+              &lt;div class=&quot;page-title&quot;&gt;
+                &lt;h1&gt;Welcome, Please Sign In!&lt;/h1&gt;
+              &lt;/div&gt;
+              &lt;div class=&quot;page-body&quot;&gt;
+                &lt;div class=&quot;customer-blocks&quot;&gt;
+                  &lt;div class=&quot;new-wrapper register-block&quot;&gt;
+                    &lt;div class=&quot;title&quot;&gt;
+                      &lt;strong&gt;New Customer&lt;/strong&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;text&quot;&gt;
+                        By creating an account on our website you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.
+                    &lt;/div&gt;
+                    &lt;div class=&quot;buttons&quot;&gt;
+                      &lt;input type=&quot;button&quot; class=&quot;button-1 register-button&quot; onclick=&quot;location.href='/register'&quot; value=&quot;Register&quot;/&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;returning-wrapper&quot;&gt;
+                    &lt;div class=&quot;title&quot;&gt;
+                      &lt;strong&gt;Returning Customer&lt;/strong&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;form-fields&quot;&gt;
+                      &lt;form enctype=&quot;application/x-www-form-urlencoded&quot; method=&quot;post&quot; action=&quot;/login&quot;&gt;
+                        &lt;div class=&quot;message-error&quot;&gt;
+                          &lt;div class=&quot;validation-summary-errors&quot;&gt;
+                            &lt;span&gt;Login was unsuccessful. Please correct the errors and try again.&lt;/span&gt;
+                            &lt;ul&gt;
+                              &lt;li&gt;The credentials provided are incorrect&lt;/li&gt;
+                            &lt;/ul&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;inputs&quot;&gt;
+                          &lt;label for=&quot;Email&quot;&gt;Email:&lt;/label&gt;
+                          &lt;input type=&quot;text&quot; class=&quot;email&quot; id=&quot;Email&quot; autofocus=&quot;autofocus&quot; name=&quot;Email&quot; value=&quot;test.test@example.com&quot;/&gt;
+                          &lt;span class=&quot;field-validation-valid&quot; data-valmsg-for=&quot;Email&quot; data-valmsg-replace=&quot;true&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;inputs&quot;&gt;
+                          &lt;label for=&quot;Password&quot;&gt;Password:&lt;/label&gt;
+                          &lt;input type=&quot;password&quot; class=&quot;password&quot; id=&quot;Password&quot; name=&quot;Password&quot;/&gt;
+                          &lt;span class=&quot;field-validation-valid&quot; data-valmsg-for=&quot;Password&quot; data-valmsg-replace=&quot;true&quot;/&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;inputs reversed&quot;&gt;
+                          &lt;input type=&quot;checkbox&quot; id=&quot;RememberMe&quot; name=&quot;RememberMe&quot; value=&quot;true&quot;/&gt;
+                          &lt;input type=&quot;hidden&quot; name=&quot;RememberMe&quot; value=&quot;false&quot;/&gt;
+                          &lt;label for=&quot;RememberMe&quot;&gt;Remember me?&lt;/label&gt;
+                          &lt;span class=&quot;forgot-password&quot;&gt;
+                            &lt;a shape=&quot;rect&quot; href=&quot;/passwordrecovery&quot;&gt;Forgot password?&lt;/a&gt;
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;buttons&quot;&gt;
+                          &lt;input type=&quot;submit&quot; class=&quot;button-1 login-button&quot; value=&quot;Log in&quot;/&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;external-authentication&quot;/&gt;
+                &lt;div class=&quot;topic-html-content&quot;&gt;
+                  &lt;div class=&quot;topic-html-content-title&quot;&gt;
+                    &lt;h2 class=&quot;topic-html-content-header&quot;&gt;
+                    About login / registration&lt;/h2&gt;
+                  &lt;/div&gt;
+                  &lt;div class=&quot;topic-html-content-body&quot;&gt;
+                    &lt;p&gt;Put your login / registration information here. You can edit this in the admin site.&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;footer&quot;&gt;
+        &lt;div class=&quot;footer-menu-wrapper&quot;&gt;
+          &lt;div class=&quot;column information&quot;&gt;
+            &lt;h3&gt;Information&lt;/h3&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/sitemap&quot;&gt;Sitemap&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/shipping-returns&quot;&gt;Shipping &amp;amp; Returns&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/privacy-policy&quot;&gt;Privacy Notice&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/conditions-of-use&quot;&gt;Conditions of Use&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/about-us&quot;&gt;About us&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/contactus&quot;&gt;Contact us&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column customer-service&quot;&gt;
+            &lt;h3&gt;Customer service&lt;/h3&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/search&quot;&gt;Search&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/news&quot;&gt;News&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/blog&quot;&gt;Blog&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/recentlyviewedproducts&quot;&gt;Recently viewed products&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/compareproducts&quot;&gt;Compare products list&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/newproducts&quot;&gt;New products&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column my-account&quot;&gt;
+            &lt;h3&gt;My account&lt;/h3&gt;
+            &lt;ul&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; class=&quot;account&quot; href=&quot;/customer/info&quot;&gt;My account&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/customer/orders&quot;&gt;Orders&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; class=&quot;&quot; href=&quot;/customer/addresses&quot;&gt;Addresses&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; class=&quot;ico-cart&quot; href=&quot;/cart&quot;&gt;Shopping cart&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li&gt;
+                &lt;a shape=&quot;rect&quot; class=&quot;ico-wishlist&quot; href=&quot;/wishlist&quot;&gt;Wishlist&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;column follow-us&quot;&gt;
+            &lt;h3&gt;Follow us&lt;/h3&gt;
+            &lt;ul&gt;
+              &lt;li class=&quot;facebook&quot;&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;http://www.facebook.com/nopCommerce&quot; target=&quot;_blank&quot;&gt;Facebook&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;twitter&quot;&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;https://twitter.com/nopCommerce&quot; target=&quot;_blank&quot;&gt;Twitter&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;rss&quot;&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;/news/rss/1&quot;&gt;RSS&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;youtube&quot;&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;http://www.youtube.com/user/nopCommerce&quot; target=&quot;_blank&quot;&gt;YouTube&lt;/a&gt;
+              &lt;/li&gt;
+              &lt;li class=&quot;google-plus&quot;&gt;
+                &lt;a shape=&quot;rect&quot; href=&quot;https://plus.google.com/+nopcommerce&quot; target=&quot;_blank&quot;&gt;Google+&lt;/a&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;footer-poweredby&quot;&gt;
+
+        Powered by           &lt;a shape=&quot;rect&quot; href=&quot;http://www.nopcommerce.com/&quot;&gt;nopCommerce&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;footer-disclaimer&quot;&gt;
+        Copyright © 2022 Tricentis Demo Web Shop. All rights reserved.
+    &lt;/div&gt;
+        &lt;div class=&quot;footer-store-theme&quot;/&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script type=&quot;text/javascript&quot;&gt;
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-6574346-11']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.4</a> at Aug 20, 2022, 4:59:06 PM</p>
+</div>
+</div>
+</body>
+</html>
